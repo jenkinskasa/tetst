@@ -1,0 +1,14 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: basic-cluster
+  region: eu-central-1
+
+nodeGroups:
+  - name: ng-2
+    instanceType: t2.micro
+    desiredCapacity: 2
+    volumeSize: 10
+    ssh:
+      publicKeyPath: ~/.ssh/eb.pub
