@@ -2,7 +2,7 @@
 name: Build and push Docker image upon release
 
 on:
-  push: # пусть гоняется на любой пуш
+#  push: # пусть гоняется на любой пуш
   release:
     types: [published] # , created, edited
 
