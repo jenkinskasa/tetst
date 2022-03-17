@@ -3,7 +3,6 @@ name: Build and push Docker image upon release
 
 on:
   push: # пусть гоняется на любой пуш
-  pull-request: # и на пулл-реквест  # Build and push Docker images *only* for releases.
   release:
     types: [published] # , created, edited
 
